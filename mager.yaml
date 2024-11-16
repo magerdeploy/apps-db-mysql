@@ -1,0 +1,12 @@
+db-mysql:
+  build:
+    image: mysql:{$MYSQL_VERSION:-latest}
+  # config:
+  #   - config/my.cnf:/etc/mysql/conf.d/my.cnf
+  volumes:
+    - mysql:/var/lib/mysql
+  env:
+    MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD:-changeme!}"
+    MYSQL_DATABASE: "${MYSQL_DATABASE:-your_db}"
+    MYSQL_USER: "${MYSQL_DATABASE:-mager}"
+    MYSQL_PASSWORD: "${MYSQL_PASSWORD:-changeme!}"
