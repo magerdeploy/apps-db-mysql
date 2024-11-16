@@ -4,7 +4,7 @@ Mager App - MySQL
 To install run this following command
 
 ```shell
-mager install https://github.com/magerdeploy/apps-db-mysql
+mager install <namespace> https://github.com/magerdeploy/apps-db-mysql
 ```
 
 You can also pass environment variable
